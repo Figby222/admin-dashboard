@@ -1,0 +1,89 @@
+
+body > .container,
+.top,
+.sidebar,
+.dashboard,
+.user-navigation,
+.utility,
+.action,
+.content,
+.projects,
+.info {
+    display: grid;
+}
+
+a {
+    text-decoration: none;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+body > .container {
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
+    width: 100vw;
+    height: 100vh;
+}
+
+.sidebar,
+.dashboard,
+.user-navigation,
+.utility {
+    grid-template-columns: 1fr;
+}
+
+
+.sidebar {
+    background-color: skyblue;
+    grid-row: 1 / -1;
+}
+
+.header > .top {
+    grid-template-columns: auto minmax(100px, 1fr) repeat(3, auto);
+    gap: 15px;
+    align-items: center;
+}
+
+.action {
+    grid-template-columns: auto minmax(max-content, 1fr) repeat(3, auto);
+    gap: 15px;
+    align-items: center;
+}
+
+.content {
+    background-color: lightgray;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows:  1fr 1fr;
+    gap: 30px;
+    padding: 30px;
+}
+
+.projects {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto repeat(3, 1fr);
+    grid-row: 1 / -1;
+    gap: 30px
+}
+
+.projects > h1 {
+    grid-column: 1 / -1;
+}
+.project {
+    background-color: white;
+    border-left: 4px solid gold;
+}
+
+.announcements,
+.trending {
+    display: grid;
+    grid-template-rows: auto repeat(3, 1fr);
+}
+
+.announcement {
+    background-color: white;
+}
+
+.trend {
+    background-color: white;
+}
