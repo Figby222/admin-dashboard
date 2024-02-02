@@ -9,6 +9,7 @@ body > .container,
 .greeting,
 .content,
 .projects,
+.icons,
 .info,
 .announcements,
 .trending {
@@ -162,4 +163,8 @@ button {
 .announcement > p {
     text-wrap: nowrap;
     overflow: hidden;
+}
+
+img {
+    max-width: 100px;
 }
