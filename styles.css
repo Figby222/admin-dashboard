@@ -156,4 +156,10 @@ button {
 .trend {
     background-color: white;
     padding: 10px;
+    overflow: hidden;
+}
+
+.announcement > p {
+    text-wrap: nowrap;
+    overflow: hidden;
 }
