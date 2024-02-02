@@ -80,7 +80,7 @@ h1 {
     align-items: center;
 }
 
-#search {
+#search-icon.svg {
     /* border: 4px solid black; */
     border: none;
     background-color: rgb(92, 118, 133, 0.3);
