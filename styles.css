@@ -139,8 +139,8 @@ button {
     border-left: 4px solid gold;
     padding: 10px;
     border-radius: 10px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr auto
 }
 
 .project > div,
@@ -153,7 +153,7 @@ button {
 }
 
 .project > div:nth-child(2) {
-    grid-column: 2 / -1;
+    grid-column: 3 / -1;
 }
 
 .icons {
