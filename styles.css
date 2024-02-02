@@ -139,14 +139,17 @@ button {
     border-radius: 10px;
 }
 
-.project > h4 {
+.project > div,
+.project > div > p {
     overflow: hidden;
 }
 
 .announcements,
 .trending {
     grid-template-rows: auto repeat(auto-fit, minmax(20px, 1fr));
+    perspective: 1px;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .announcement,
