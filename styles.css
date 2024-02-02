@@ -45,7 +45,6 @@ body > .container {
 }
 
 .sidebar,
-.dashboard,
 .user-navigation,
 .utility {
     grid-template-columns: 1fr;
@@ -62,6 +61,18 @@ h1 {
     color: white;
     font-weight: bold;
     grid-template-rows: 1fr 2fr 1fr
+}
+
+.dashboard {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: start;
+    justify-items: start;
+}
+
+.dashboard img {
+    color: white;
+    max-width: 50px;
 }
 
 .user-navigation,
