@@ -9,6 +9,7 @@ body > .container,
 .greeting,
 .content,
 .projects,
+.project,
 .icons,
 .info,
 .announcements,
@@ -138,11 +139,30 @@ button {
     border-left: 4px solid gold;
     padding: 10px;
     border-radius: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
 }
 
 .project > div,
 .project > div > p {
     overflow: hidden;
+}
+
+.project > div:nth-child(1) {
+    grid-column: 1 / -1;
+}
+
+.project > div:nth-child(2) {
+    grid-column: 2 / -1;
+}
+
+.icons {
+    grid-template-columns: repeat(3, auto);
+    justify-items: end;
+}
+
+img {
+    max-width: 30px;
 }
 
 .announcements,
@@ -165,6 +185,3 @@ button {
     overflow: hidden;
 }
 
-img {
-    max-width: 100px;
-}
