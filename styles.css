@@ -6,6 +6,7 @@ body > .container,
 .user-navigation,
 .utility,
 .action,
+.greeting,
 .content,
 .projects,
 .info,
@@ -90,6 +91,25 @@ h1 {
     align-items: center;
 }
 
+.greeting {
+    grid-template-rows: auto auto;
+    align-content: center;
+    gap: 5px;
+}
+
+.greeting > p {
+    margin: 0;
+    padding: 0;
+}
+
+.text {
+    font-size: 0.75rem;
+}
+
+.handle {
+    font-size: 1.25rem;
+}
+
 button {
     background-color: #0874b2;
     color: white;
@@ -119,13 +139,18 @@ button {
     border-radius: 10px;
 }
 
+.project > h4 {
+    overflow: hidden;
+}
+
 .announcements,
 .trending {
     grid-template-rows: auto repeat(auto-fit, minmax(20px, 1fr));
+    border-radius: 10px;
 }
 
 .announcement,
 .trend {
     background-color: white;
-    padding: 10px
+    padding: 10px;
 }
