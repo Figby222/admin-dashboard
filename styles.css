@@ -60,25 +60,38 @@ h1 {
     grid-row: 1 / -1;
     color: white;
     font-weight: bold;
-    grid-template-rows: 1fr 2fr 1fr
+    grid-template-rows: repeat(auto, max-content);
+    align-items: start;
+    gap: 50px;
+    align-content: start;
 }
 
 .dashboard {
+    align-content: start;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: start;
     justify-items: start;
 }
 
-.dashboard img {
+.dashboard > img {
     color: white;
     max-width: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard > span {
+    font-size: 1.25rem;
+    margin: 0;
+    padding: 0;
 }
 
 .user-navigation,
 .utility {
-    grid-template-rows: repeat(auto-fit, 50px);
-    align-content: center;
+    grid-template-rows: repeat(auto, 50px);
+    align-content: start;
+    gap: 20px;
 }
 
 .header {
