@@ -188,7 +188,6 @@ button {
 }
 
 img {
-    max-width: 30px;
     min-width: 30px;
 }
 
@@ -207,12 +206,7 @@ img {
     align-items: center;
     align-content: center;
     > p {
-        
+        text-wrap: nowrap;
+        overflow: hidden;
     }
 }
-
-.announcement > p {
-    text-wrap: nowrap;
-    overflow: hidden;
-}
-
