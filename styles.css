@@ -20,7 +20,9 @@ body > .container,
 .icons,
 .info,
 .announcements,
-.trending {
+.trending,
+.announcement,
+.trend {
     display: grid;
 }
 
@@ -199,8 +201,10 @@ img {
 .announcement,
 .trend {
     background-color: white;
-    padding: 10px;
+    padding: 20px;
     overflow: hidden;
+    align-items: center;
+    align-content: center;
 }
 
 .announcement > p {
