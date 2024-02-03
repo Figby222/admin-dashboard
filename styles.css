@@ -160,7 +160,7 @@ button {
 
 .project {
     background-color: white;
-    border-left: 4px solid gold;
+    border-left: 6px solid gold;
     padding: 10px;
     border-radius: 10px;
     grid-template-columns: repeat(3, 1fr);
