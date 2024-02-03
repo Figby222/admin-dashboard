@@ -175,11 +175,6 @@ button {
     gap: 10px;
 }
 
-.project > div,
-.project > div > p {
-    overflow: auto;
-}
-
 .icons {
     grid-template-columns: repeat(3, auto);
     justify-items: end;
