@@ -206,6 +206,9 @@ img {
     padding: 20px;
     align-items: center;
     align-content: center;
+    > p {
+        
+    }
 }
 
 .announcement > p {
